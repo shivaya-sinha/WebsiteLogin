@@ -52,7 +52,7 @@ def main():
 def convertIt(main):
     web.print_(printer)
     print "Pdf generated"
-    
+    QApplication.exit()
  
     QObject.connect(web, SIGNAL("loadFinished(bool)"), convertIt)
  
