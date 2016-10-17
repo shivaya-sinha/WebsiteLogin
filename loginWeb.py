@@ -32,7 +32,8 @@ def main():
     print login_data
  
     # Authenticate
-    
+    r = session.post(URL, data = login_data)
+
  
     # Try accessing a page that requires you to be logged in
     r = session.get('http://sdpdr.nic.in/annauniv/result')
